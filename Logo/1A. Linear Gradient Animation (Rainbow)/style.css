@@ -1,0 +1,63 @@
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  padding: 1rem;
+}
+.nav__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-right: 2.5rem;
+}
+.nav__link li {
+  margin-right: 1.5rem;
+}
+.nav__logo {
+  width: 25rem;
+  height: 4rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 100%, 85%),
+    hsl(30, 100%, 85%),
+    hsl(60, 100%, 85%),
+    hsl(90, 100%, 85%),
+    hsl(120, 100%, 85%),
+    hsl(150, 100%, 85%),
+    hsl(180, 100%, 85%),
+    hsl(210, 100%, 85%),
+    hsl(240, 100%, 85%),
+    hsl(270, 100%, 85%),
+    hsl(300, 100%, 85%),
+    hsl(330, 100%, 85%),
+    hsl(360, 100%, 85%)
+  );
+  background-size: 20rem 20rem;
+ 
+  margin: 0;
+  -webkit-mask: url(img/logo.png);
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  animation: color_effect 5s linear infinite;
+  position: relative;
+
+}
+
+@keyframes color_effect {
+  to {
+    background-position: 40rem 0;
+  }
+}

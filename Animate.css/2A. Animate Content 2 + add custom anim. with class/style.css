@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    height: 80vh;
+    padding: 5rem;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+  h1 {
+    margin: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+    
+  }
+
+  .section1 {
+    background-color: #F5D0C5;
+  }
+  
+  .section2 {
+    background-color: #F5E1C5;
+  }
+  
+  .section3 {
+    background-color: #C5F5D0;
+  }
+  
+  .section4 {
+    background-color: #C5D0F5;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  img {
+    width: 50%;
+    margin-right: 2rem;
+  }
+  
+  p {
+    width: 50%;
+  }
+  
+  .animate__animated {
+    opacity: 0;
+  }
+
+/* animation personnalisée class="thanks" */
+  .thanks {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 3.5rem; 
+    }
+/* nom de l'animation (animate.css) */
+    .thanks.animate__jackInTheBox {
+    opacity: 1;
+    }
